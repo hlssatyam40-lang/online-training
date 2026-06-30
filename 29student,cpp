@@ -1,0 +1,35 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class Student {
+private:
+    string name;
+    int rollNo;
+    float marks;
+
+public:
+    // Constructor
+    Student(string n, int roll, float m) {
+        name = n;
+        rollNo = roll;
+        marks = m;
+    }
+    
+    // Member function to display details
+    void display() {
+        cout << "Name: " << name << endl;
+        cout << "Roll No: " << rollNo << endl;
+        cout << "Marks: " << marks << endl;
+    }
+};
+
+int main() {
+    // Create student object
+    Student s1("Satyam Singh", 101, 95.5);
+    
+    cout << "Student Details:" << endl;
+    s1.display();
+    
+    return 0;
+}
